@@ -48,6 +48,15 @@ public class googleTests{
         driver.findElement(By.xpath("//div[@jsname='Pt8tGc']")).click();
 
     }
+    @Test
+    public void test3() {
+        driver.get("https://google.com");
+        driver.findElement(By.cssSelector("input.gLFyf.gsfi")).sendKeys("калькулятор", Keys.ENTER);
+        driver.findElement(By.xpath("//div[@jsname='aN1RFf']")).click();
+        driver.findElement(By.xpath("//div[@jsname='Pt8tGc']")).click();
+
+
+    }
 
     @AfterAll
     public static void teardown() {
