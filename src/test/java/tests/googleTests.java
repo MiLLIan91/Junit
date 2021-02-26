@@ -38,6 +38,16 @@ public class googleTests{
         driver.findElement(By.xpath("//div[@jsname='Ax5wH']")).click();
         driver.findElement(By.xpath("//div[@jsname='Pt8tGc']")).click();
     }
+    @Test
+    public void test2() {
+        driver.get("https://google.com");
+        driver.findElement(By.cssSelector("input.gLFyf.gsfi")).sendKeys("калькулятор", Keys.ENTER);
+        driver.findElement(By.xpath("//div[@jsname='abcgof']")).click();
+        driver.findElement(By.xpath("//div[@jsname='WxTTNd']")).click();
+        driver.findElement(By.xpath("//div[@jsname='bkEvMb']")).click();
+        driver.findElement(By.xpath("//div[@jsname='Pt8tGc']")).click();
+
+    }
 
     @AfterAll
     public static void teardown() {
